@@ -1,27 +1,29 @@
 import './style.css';
-import hero from './hero.jpeg'
+import { home } from './home.js'
 
 const content = document.getElementById("content")
 
-// Header 1
-let hOne = document.createElement("h1")
-hOne.textContent = "Webpack Restaurant"
+const navBar = document.createElement("div")
+navBar.className = "navBar"
 
-// Header 2
-let hTwo = document.createElement("h2")
-hTwo.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laudantium dolorum voluptate, perspiciatis mollitia esse a sequi officiis laborum harum!"
+const nav = document.createElement("nav")
 
-// Hero Image
-const heroImage = document.createElement("img")
-heroImage.src = hero;
 
-// Header 4
-let hFour = document.createElement("h4")
-hFour.textContent = "Lorem ipsum dolor sit amet."
+const homePage = document.createElement("div")
+homePage.className = "home"
+homePage.textContent = "Home"
+nav.appendChild(homePage)
+const contactPage = document.createElement("div")
+contactPage.className = "contact"
+contactPage.textContent = "Contact"
+nav.appendChild(contactPage)
+const menuPage = document.createElement("div")
+menuPage.className = "menu"
+menuPage.textContent = "Menu"
+nav.appendChild(menuPage)
 
-content.appendChild(hOne)
-content.appendChild(hTwo)
-content.appendChild(heroImage)
-content.appendChild(hFour)
+navBar.appendChild(nav)
 
-console.log('Hello World!')
+content.appendChild(navBar)
+
+home();

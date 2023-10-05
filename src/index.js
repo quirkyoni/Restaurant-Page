@@ -1,6 +1,7 @@
 import './style.css';
 import { home } from './home.js'
 import { menu } from './menu.js'
+import { contact } from './contact'
 
 const content = document.getElementById("content")
 
@@ -27,4 +28,6 @@ navBar.appendChild(nav)
 
 content.appendChild(navBar)
 
-menu();
+
+
+contact();

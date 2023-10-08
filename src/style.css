@@ -2,3 +2,12 @@ body {
     color: white;
     background: url('./hero.jpeg');
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > * {
+    margin: 1rem;
+}

@@ -1,6 +1,9 @@
 body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
     color: white;
-    background: url('./hero.jpeg');
+    background: linear-gradient(rgba(21, 21, 21, .5), rgba(85, 85, 85, .5)), url('./hero.jpeg');
 }
 
 nav {
@@ -8,6 +11,21 @@ nav {
     justify-content: flex-end;
 }
 
-nav > * {
+nav>* {
+    font-weight: bold;
     margin: 1rem;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50.5px);
+}
+
+.home-header-two {
+    max-width: 80%;
 }
